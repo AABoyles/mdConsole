@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap-theme.min.css" />
   <link rel="Stylesheet" href="libraries/alertify.min.css" />
   <link rel="Stylesheet" href="libraries/bootstrap.min.css" />
+  <link rel="Stylesheet" href="libraries/github-markdown.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -35,29 +36,101 @@
           </div>
         </nav>
         <textarea id="script" class="form-control">
-markItUp! Universal markup editor
------------------------------------
+mdConsole
+=========
 
-**markItUp!** is a javascript over [jQuery](http://www.jquery.com "jQuery Website") plug-in which allow you to turn any textarea in a markup editor.
+## Horizontal Lines
 
-**markItUp!** is a lightweight fully customizable engine made to easily fit all developers needs in their CMS, blogs, forums or websites.
+You can make them using three Underscores...
+___
 
-_Html, Textile, Wiki Syntax, Markdown, BBcode_ or even your own Markup system can be easily implemented.
+...or three Hyphens...
 
-- integrate it easily
-- customize buttons and macros to fit all your need
-- customize keyboard shortcuts
-- customize toolbar and css look and feel
-- skins
-- icons
-- dropdown menus
-- separators
-- use the engine from anywhere in the page
-- implement any markup language even your own
-- implement your own javascript macros even the most advanced
-- allows multi-line edition
-- preview ajax result dynamically in any markup parser
-- offers userfriendly experience and effectiveness
+---
+
+or three Asterisks:
+
+***
+
+## Emphasis
+
+**This is bold text between two asterisks**
+
+__This is bold text between two underscores__
+
+*This is italic text between asterisks*
+
+_This is italic text between underscores_
+
+## Blockquotes
+
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
+
+## Lists
+
+### Unordered
+
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+
+### Ordered
+
+You can use sequential numbers...
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+
+...or keep all the numbers as `1.`
+
+1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+
+## Code
+
+Inline `code`
+
+Indented code
+
+    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+
+## Images
+
+![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
         </textarea>
       </div>
       <div id="error-wrapper"></div>
@@ -72,7 +145,7 @@ _Html, Textile, Wiki Syntax, Markdown, BBcode_ or even your own Markup system ca
           </div>
         </div>
       </nav>
-      <div id="output-wrapper"></div>
+      <div id="output-wrapper" class="markdown-body"></div>
     </div>
   </div>
 </div>
