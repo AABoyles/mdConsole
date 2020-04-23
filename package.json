@@ -1,0 +1,22 @@
+{
+  "name": "mdconsole",
+  "version": "1.0.0",
+  "description": "Realtime Markdown Editor",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AABoyles/mdConsole.git"
+  },
+  "author": "Tony Boyles <AABoyles@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AABoyles/mdConsole/issues"
+  },
+  "homepage": "https://github.com/AABoyles/mdConsole#readme",
+  "dependencies": {
+    "ace-builds": "^1.4.11"
+  }
+}
