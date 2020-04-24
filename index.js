@@ -8,7 +8,8 @@ let inputeditor;
 
   inputeditor = ace.edit("md");
   inputeditor.setTheme("ace/theme/github");
-
+  inputeditor.setOption("wrapBehaviorsEnabled", true);
+  inputeditor.getSession().setOption("wrap", true);
   inputeditor.getSession().setMode("ace/mode/markdown");
   inputeditor.getSession().on('change', () => {
     let content = inputeditor.getValue();
